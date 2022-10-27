@@ -13,15 +13,16 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchTabBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    var presenter: HomeVCPresenter!
+    var presenter: HomeVCPresenter?
+    var interactor: FoodInteractor!
+    var router: HomeVCRouter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Good morning"
         setDataTableView()
-        presenter = HomeVCPresenter(homeView: self)
-        presenter.viewDidLoad()
+        presenter?.viewDidLoad()
 
     }
 }

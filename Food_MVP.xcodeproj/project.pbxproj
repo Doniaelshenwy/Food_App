@@ -18,7 +18,6 @@
 		FC3A889D2904179700E789C9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A889C2904179700E789C9 /* UIImageView+Extension.swift */; };
 		FC3BB6422901E5D500186337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BB6412901E5D500186337 /* AppDelegate.swift */; };
 		FC3BB6442901E5D500186337 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BB6432901E5D500186337 /* SceneDelegate.swift */; };
-		FC3BB6462901E5D500186337 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BB6452901E5D500186337 /* ViewController.swift */; };
 		FC3BB64C2901E5D600186337 /* Food_MVP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC3BB64A2901E5D600186337 /* Food_MVP.xcdatamodeld */; };
 		FC3BB64E2901E5DA00186337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3BB64D2901E5DA00186337 /* Assets.xcassets */; };
 		FC3BB6512901E5DA00186337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3BB64F2901E5DA00186337 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,16 @@
 		FC3BB6862902141900186337 /* HomeVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BB6852902141900186337 /* HomeVC+Tableview.swift */; };
 		FC3BB68A2902145E00186337 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BB6882902145E00186337 /* HomeTableViewCell.swift */; };
 		FC3BB68B2902145E00186337 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3BB6892902145E00186337 /* HomeTableViewCell.xib */; };
+		FC596442290ACDED005AE39F /* DetailsVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC596441290ACDED005AE39F /* DetailsVCRouter.swift */; };
+		FC596444290ACE41005AE39F /* DetailsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC596443290ACE41005AE39F /* DetailsVCPresenter.swift */; };
+		FC596446290ACFB0005AE39F /* DetailsVC+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC596445290ACFB0005AE39F /* DetailsVC+Presenter.swift */; };
+		FC59644A290AE792005AE39F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC596448290AE792005AE39F /* SplashViewController.swift */; };
+		FC59644B290AE792005AE39F /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC596449290AE792005AE39F /* SplashViewController.xib */; };
+		FC59644F290AE7E8005AE39F /* SplashVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59644E290AE7E8005AE39F /* SplashVCPresenter.swift */; };
+		FC596451290AE842005AE39F /* SplashVC+delegatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC596450290AE842005AE39F /* SplashVC+delegatePresenter.swift */; };
+		FC596457290B1736005AE39F /* food.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC596456290B1736005AE39F /* food.mp4 */; };
+		FC59645A290B1B80005AE39F /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC596459290B1B80005AE39F /* SplashRouter.swift */; };
+		FCBCAF442906C1420089F9A7 /* HomeVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBCAF432906C1410089F9A7 /* HomeVCRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +79,6 @@
 		FC3BB63E2901E5D500186337 /* Food_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3BB6412901E5D500186337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3BB6432901E5D500186337 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC3BB6452901E5D500186337 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC3BB64B2901E5D600186337 /* Food_MVP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food_MVP.xcdatamodel; sourceTree = "<group>"; };
 		FC3BB64D2901E5DA00186337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3BB6502901E5DA00186337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +95,16 @@
 		FC3BB6852902141900186337 /* HomeVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Tableview.swift"; sourceTree = "<group>"; };
 		FC3BB6882902145E00186337 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		FC3BB6892902145E00186337 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		FC596441290ACDED005AE39F /* DetailsVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVCRouter.swift; sourceTree = "<group>"; };
+		FC596443290ACE41005AE39F /* DetailsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVCPresenter.swift; sourceTree = "<group>"; };
+		FC596445290ACFB0005AE39F /* DetailsVC+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsVC+Presenter.swift"; sourceTree = "<group>"; };
+		FC596448290AE792005AE39F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FC596449290AE792005AE39F /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		FC59644E290AE7E8005AE39F /* SplashVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVCPresenter.swift; sourceTree = "<group>"; };
+		FC596450290AE842005AE39F /* SplashVC+delegatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashVC+delegatePresenter.swift"; sourceTree = "<group>"; };
+		FC596456290B1736005AE39F /* food.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = food.mp4; path = ../../../../../../../Downloads/food.mp4; sourceTree = "<group>"; };
+		FC596459290B1B80005AE39F /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		FCBCAF432906C1410089F9A7 /* HomeVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +205,6 @@
 				FC3BB676290206A900186337 /* Scenes */,
 				FC3BB675290203CA00186337 /* Resources */,
 				FC3BB6742902037100186337 /* Core */,
-				FC3BB6432901E5D500186337 /* SceneDelegate.swift */,
-				FC3BB6452901E5D500186337 /* ViewController.swift */,
 				FC3BB64A2901E5D600186337 /* Food_MVP.xcdatamodeld */,
 			);
 			path = Food_MVP;
@@ -214,6 +230,7 @@
 		FC3BB6742902037100186337 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FC3BB6432901E5D500186337 /* SceneDelegate.swift */,
 				FC3BB6412901E5D500186337 /* AppDelegate.swift */,
 			);
 			path = Core;
@@ -231,9 +248,9 @@
 		FC3BB676290206A900186337 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				FC3BB6832902075100186337 /* Presenter */,
-				FC3BB6842902076400186337 /* Interactor */,
-				FC3BB678290206D600186337 /* Food */,
+				FC596447290AE751005AE39F /* Splash Screen */,
+				FC3BB6822902072900186337 /* Home */,
+				FC3BB67D2902070600186337 /* Details */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -247,21 +264,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FC3BB678290206D600186337 /* Food */ = {
-			isa = PBXGroup;
-			children = (
-				FC3BB67D2902070600186337 /* Details */,
-				FC3BB6822902072900186337 /* Home */,
-				FC3BB6872902143300186337 /* TableViewCell */,
-			);
-			path = Food;
-			sourceTree = "<group>";
-		};
 		FC3BB67D2902070600186337 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				FC3BB67E2902072300186337 /* DetailsViewController.swift */,
-				FC3BB67F2902072300186337 /* DetailsViewController.xib */,
+				FC596440290ACDCF005AE39F /* Router */,
+				FC59643F290ACDC7005AE39F /* Presenter */,
+				FC59643E290ACDB2005AE39F /* View Controller */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -269,10 +277,11 @@
 		FC3BB6822902072900186337 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				FC3BB679290206FF00186337 /* HomeViewController.swift */,
-				FC3BB67A290206FF00186337 /* HomeViewController.xib */,
-				FC3BB6852902141900186337 /* HomeVC+Tableview.swift */,
-				FC35C7042903575900ADD77C /* HomeVC+PresenterDelegate.swift */,
+				FC3BB6872902143300186337 /* TableViewCell */,
+				FCBCAF422906C11C0089F9A7 /* Router */,
+				FC3BB6832902075100186337 /* Presenter */,
+				FC3BB6842902076400186337 /* Interactor */,
+				FC59643D290ABBB4005AE39F /* View Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -300,6 +309,96 @@
 				FC3BB6892902145E00186337 /* HomeTableViewCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		FC59643D290ABBB4005AE39F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC3BB67A290206FF00186337 /* HomeViewController.xib */,
+				FC3BB679290206FF00186337 /* HomeViewController.swift */,
+				FC35C7042903575900ADD77C /* HomeVC+PresenterDelegate.swift */,
+				FC3BB6852902141900186337 /* HomeVC+Tableview.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		FC59643E290ACDB2005AE39F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC3BB67F2902072300186337 /* DetailsViewController.xib */,
+				FC3BB67E2902072300186337 /* DetailsViewController.swift */,
+				FC596445290ACFB0005AE39F /* DetailsVC+Presenter.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		FC59643F290ACDC7005AE39F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC596443290ACE41005AE39F /* DetailsVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC596440290ACDCF005AE39F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC596441290ACDED005AE39F /* DetailsVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FC596447290AE751005AE39F /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FC596458290B1B5B005AE39F /* Router */,
+				FC596453290AEA0A005AE39F /* Video */,
+				FC59644D290AE7BC005AE39F /* Presenter */,
+				FC59644C290AE79B005AE39F /* View Controller */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		FC59644C290AE79B005AE39F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC596448290AE792005AE39F /* SplashViewController.swift */,
+				FC596449290AE792005AE39F /* SplashViewController.xib */,
+				FC596450290AE842005AE39F /* SplashVC+delegatePresenter.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		FC59644D290AE7BC005AE39F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC59644E290AE7E8005AE39F /* SplashVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC596453290AEA0A005AE39F /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				FC596456290B1736005AE39F /* food.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		FC596458290B1B5B005AE39F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC596459290B1B80005AE39F /* SplashRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FCBCAF422906C11C0089F9A7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FCBCAF432906C1410089F9A7 /* HomeVCRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +511,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3BB6512901E5DA00186337 /* LaunchScreen.storyboard in Resources */,
+				FC596457290B1736005AE39F /* food.mp4 in Resources */,
+				FC59644B290AE792005AE39F /* SplashViewController.xib in Resources */,
 				FC3BB64E2901E5DA00186337 /* Assets.xcassets in Resources */,
 				FC3BB67C290206FF00186337 /* HomeViewController.xib in Resources */,
 				FC3BB68B2902145E00186337 /* HomeTableViewCell.xib in Resources */,
@@ -543,16 +644,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC596442290ACDED005AE39F /* DetailsVCRouter.swift in Sources */,
 				FC35C7012903441800ADD77C /* FoodInteractor.swift in Sources */,
 				FC3BB67B290206FF00186337 /* HomeViewController.swift in Sources */,
 				FC3A889D2904179700E789C9 /* UIImageView+Extension.swift in Sources */,
-				FC3BB6462901E5D500186337 /* ViewController.swift in Sources */,
+				FC596446290ACFB0005AE39F /* DetailsVC+Presenter.swift in Sources */,
+				FCBCAF442906C1420089F9A7 /* HomeVCRouter.swift in Sources */,
+				FC59644F290AE7E8005AE39F /* SplashVCPresenter.swift in Sources */,
 				FC3BB6422901E5D500186337 /* AppDelegate.swift in Sources */,
 				FC35C6FF290342E300ADD77C /* CategoryModel.swift in Sources */,
 				FC3BB6442901E5D500186337 /* SceneDelegate.swift in Sources */,
+				FC596444290ACE41005AE39F /* DetailsVCPresenter.swift in Sources */,
 				FC3BB64C2901E5D600186337 /* Food_MVP.xcdatamodeld in Sources */,
 				FC35C70329034A4100ADD77C /* HomeVCPresenter.swift in Sources */,
+				FC596451290AE842005AE39F /* SplashVC+delegatePresenter.swift in Sources */,
 				FC3BB6862902141900186337 /* HomeVC+Tableview.swift in Sources */,
+				FC59644A290AE792005AE39F /* SplashViewController.swift in Sources */,
+				FC59645A290B1B80005AE39F /* SplashRouter.swift in Sources */,
 				FC35C6FD290342C400ADD77C /* FoodModel.swift in Sources */,
 				FC35C7052903575900ADD77C /* HomeVC+PresenterDelegate.swift in Sources */,
 				FC3BB68A2902145E00186337 /* HomeTableViewCell.swift in Sources */,

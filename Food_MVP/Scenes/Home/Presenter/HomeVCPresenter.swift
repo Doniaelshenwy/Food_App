@@ -8,8 +8,10 @@
 import Foundation
 
 protocol HomeView: AnyObject{
+    var presenter: HomeVCPresenter? {get set}
     func fetchDataSucessful()
     func showError(error: String)
+  //  func didSelect(user: Category)
 }
 
 protocol FoodCellView{
@@ -20,10 +22,13 @@ protocol FoodCellView{
 class HomeVCPresenter{
     var foodArray: [Category] = []
     private weak var homeView: HomeView?
-    private var foodIntractor = FoodInteractor()
-    
-    init(homeView: HomeView){
+    private var foodIntractor: FoodInteractor
+    private var foodRouter: HomeVCRouter
+    // , foodIntractor: FoodInteractor, foodRouter: HomeVCRouter
+    init(homeView: HomeView, foodIntractor: FoodInteractor, foodRouter: HomeVCRouter){
         self.homeView = homeView
+        self.foodIntractor = foodIntractor
+        self.foodRouter = foodRouter
     }
     
     func viewDidLoad() {
@@ -44,6 +49,7 @@ class HomeVCPresenter{
     }
     
     func countFoodArray() -> Int{
+        print(foodArray.count)
         return foodArray.count
     }
     
@@ -51,5 +57,10 @@ class HomeVCPresenter{
         let food = foodArray[index]
         cell.setName(name: food.strCategory)
         cell.setImage(img: food.strCategoryThumb)
+    }
+    
+    func didSelect(index: Int){
+        let food = foodArray[index]
+        foodRouter.navigateToDetalisScreen(from: homeView, food: food)
     }
 }

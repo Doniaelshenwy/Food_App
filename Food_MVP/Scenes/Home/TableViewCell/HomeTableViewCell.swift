@@ -9,6 +9,7 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell, FoodCellView {
     
+    @IBOutlet weak var viewCell: UIView!
     @IBOutlet weak var imageFood: UIImageView!
     @IBOutlet weak var nameFood: UILabel!
     
