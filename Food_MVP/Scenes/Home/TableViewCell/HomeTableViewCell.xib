@@ -20,14 +20,14 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JpY-ka-ajT">
                         <rect key="frame" x="15" y="10" width="290" height="100"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KyU-JO-8EJ">
-                                <rect key="frame" x="10" y="9" width="96" height="83"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KyU-JO-8EJ">
+                                <rect key="frame" x="5" y="4" width="120" height="91"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="zqk-aI-iVS"/>
+                                    <constraint firstAttribute="width" constant="120" id="zqk-aI-iVS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW8-uT-tag">
-                                <rect key="frame" x="122" y="38.5" width="158" height="24"/>
+                                <rect key="frame" x="145" y="38" width="135" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,11 +35,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KyU-JO-8EJ" firstAttribute="top" secondItem="JpY-ka-ajT" secondAttribute="top" constant="9" id="KUq-nH-lPi"/>
+                            <constraint firstItem="KyU-JO-8EJ" firstAttribute="top" secondItem="JpY-ka-ajT" secondAttribute="top" constant="5" id="KUq-nH-lPi"/>
                             <constraint firstItem="rW8-uT-tag" firstAttribute="centerY" secondItem="KyU-JO-8EJ" secondAttribute="centerY" id="Kvq-Of-VPH"/>
-                            <constraint firstItem="KyU-JO-8EJ" firstAttribute="leading" secondItem="JpY-ka-ajT" secondAttribute="leading" constant="10" id="Oen-hT-DIh"/>
-                            <constraint firstItem="rW8-uT-tag" firstAttribute="leading" secondItem="KyU-JO-8EJ" secondAttribute="trailing" constant="16" id="SKQ-hN-1KX"/>
-                            <constraint firstAttribute="bottom" secondItem="KyU-JO-8EJ" secondAttribute="bottom" constant="8" id="iAd-zJ-CQL"/>
+                            <constraint firstItem="KyU-JO-8EJ" firstAttribute="leading" secondItem="JpY-ka-ajT" secondAttribute="leading" constant="5" id="Oen-hT-DIh"/>
+                            <constraint firstItem="rW8-uT-tag" firstAttribute="leading" secondItem="KyU-JO-8EJ" secondAttribute="trailing" constant="20" id="SKQ-hN-1KX"/>
+                            <constraint firstAttribute="bottom" secondItem="KyU-JO-8EJ" secondAttribute="bottom" constant="5" id="iAd-zJ-CQL"/>
                             <constraint firstAttribute="trailing" secondItem="rW8-uT-tag" secondAttribute="trailing" constant="10" id="yxQ-ER-S1L"/>
                         </constraints>
                     </view>
@@ -61,6 +61,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

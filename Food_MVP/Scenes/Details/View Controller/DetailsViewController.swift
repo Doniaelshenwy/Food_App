@@ -20,6 +20,9 @@ class DetailsViewController: UIViewController {
 //    var decriptionTV = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = UIColor(named: "Color")
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "Color")]
+
         title = "Details"
         presenter?.viewDidLoad()
 //        setData()

@@ -17,6 +17,7 @@ protocol HomeView: AnyObject{
 protocol FoodCellView{
     func setName(name: String)
     func setImage(img: String)
+    func curveView()
 }
 
 class HomeVCPresenter{
@@ -39,7 +40,6 @@ class HomeVCPresenter{
         foodIntractor.getDataFromAPI { [self] dataArray, error in
             if let dataArray = dataArray{
                 foodArray = dataArray.categories
-                print(foodArray)
                 homeView?.fetchDataSucessful()
             }
             if let error = error{
@@ -49,7 +49,6 @@ class HomeVCPresenter{
     }
     
     func countFoodArray() -> Int{
-        print(foodArray.count)
         return foodArray.count
     }
     
@@ -57,6 +56,7 @@ class HomeVCPresenter{
         let food = foodArray[index]
         cell.setName(name: food.strCategory)
         cell.setImage(img: food.strCategoryThumb)
+        cell.curveView()
     }
     
     func didSelect(index: Int){
