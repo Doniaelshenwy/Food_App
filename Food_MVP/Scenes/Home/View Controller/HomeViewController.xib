@@ -19,43 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BD6-Oc-SAL">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSn-LF-iWR">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                            <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NVS-ou-FDl">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </tableView>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="818" id="3tT-97-3YB"/>
-                                <constraint firstItem="NVS-ou-FDl" firstAttribute="top" secondItem="sSn-LF-iWR" secondAttribute="top" id="Jwq-60-f7i"/>
-                                <constraint firstItem="NVS-ou-FDl" firstAttribute="leading" secondItem="sSn-LF-iWR" secondAttribute="leading" id="QrM-18-2Cb"/>
-                                <constraint firstAttribute="trailing" secondItem="NVS-ou-FDl" secondAttribute="trailing" id="jZW-ko-WR4"/>
-                                <constraint firstAttribute="bottom" secondItem="NVS-ou-FDl" secondAttribute="bottom" id="xJL-Sf-6H6"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="sSn-LF-iWR" secondAttribute="bottom" id="Fum-4q-3iP"/>
-                        <constraint firstItem="sSn-LF-iWR" firstAttribute="leading" secondItem="BD6-Oc-SAL" secondAttribute="leading" id="Hcc-An-b5f"/>
-                        <constraint firstItem="sSn-LF-iWR" firstAttribute="width" secondItem="BD6-Oc-SAL" secondAttribute="width" id="SCM-cd-jM5"/>
-                        <constraint firstAttribute="trailing" secondItem="sSn-LF-iWR" secondAttribute="trailing" id="fOh-0D-7x6"/>
-                        <constraint firstItem="sSn-LF-iWR" firstAttribute="top" secondItem="BD6-Oc-SAL" secondAttribute="top" id="w8F-bZ-qsF"/>
-                    </constraints>
-                </scrollView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NVS-ou-FDl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="BD6-Oc-SAL" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="1JU-1R-5rT"/>
-                <constraint firstItem="BD6-Oc-SAL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9hI-X0-m6J"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BD6-Oc-SAL" secondAttribute="trailing" id="GFg-37-Kwh"/>
-                <constraint firstItem="BD6-Oc-SAL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zmg-R1-GyI"/>
+                <constraint firstItem="NVS-ou-FDl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="B8d-yO-X9b"/>
+                <constraint firstItem="NVS-ou-FDl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BCt-5m-JrQ"/>
+                <constraint firstItem="NVS-ou-FDl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JjD-yP-gVl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NVS-ou-FDl" secondAttribute="bottom" id="mtu-Mk-a5A"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
         </view>
