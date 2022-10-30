@@ -7,6 +7,7 @@ target 'Food_MVP' do
 
    pod 'Alamofire'
    pod 'Kingfisher'
+   pod 'NVActivityIndicatorView'
   # Pods for Food_MVP
 
   target 'Food_MVPTests' do

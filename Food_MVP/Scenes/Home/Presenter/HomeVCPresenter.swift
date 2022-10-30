@@ -12,6 +12,8 @@ protocol HomeView: AnyObject{
     var presenter: HomeVCPresenter? {get set}
     func fetchDataSucessful()
     func showError(error: String)
+    func startAnnimation()
+    func stopAnnimation()
   //  func didSelect(user: Category)
 }
 
@@ -39,11 +41,13 @@ class HomeVCPresenter{
     }
     
     func getData(){
+        homeView?.startAnnimation()
         foodIntractor.getDataFromAPI { [self] dataArray, error in
             if let dataArray = dataArray{
                 foodArray = dataArray.categories
                 searchArray = foodArray
                 homeView?.fetchDataSucessful()
+                homeView?.stopAnnimation()
             }
             if let error = error{
                 homeView?.showError(error: error)

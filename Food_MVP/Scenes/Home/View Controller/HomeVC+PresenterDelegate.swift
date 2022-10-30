@@ -7,14 +7,23 @@
 
 import Foundation
 
+
 extension HomeViewController: HomeView{
-   
+    
     func fetchDataSucessful() {
         tableView.reloadData()
     }
     
     func showError(error: String) {
         print(error)
+    }
+    
+    func startAnnimation() {
+        activityIndicator.startAnimating()
+    }
+    
+    func stopAnnimation() {
+        activityIndicator.stopAnimating()
     }
     
    

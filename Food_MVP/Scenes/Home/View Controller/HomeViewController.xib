@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Food_MVP" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="kG8-Ww-Nre" id="PvM-fF-Thj"/>
                 <outlet property="tableView" destination="NVS-ou-FDl" id="0zG-nn-xIV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,13 +24,23 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-Ww-Nre" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="20" y="344" width="374" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9BP-79-kit"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="NVS-ou-FDl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="B8d-yO-X9b"/>
                 <constraint firstItem="NVS-ou-FDl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BCt-5m-JrQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kG8-Ww-Nre" secondAttribute="trailing" constant="20" id="FsU-f7-CQt"/>
                 <constraint firstItem="NVS-ou-FDl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JjD-yP-gVl"/>
+                <constraint firstItem="kG8-Ww-Nre" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="300" id="WZu-De-aLf"/>
+                <constraint firstItem="kG8-Ww-Nre" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ctp-bM-gKq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NVS-ou-FDl" secondAttribute="bottom" id="mtu-Mk-a5A"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
