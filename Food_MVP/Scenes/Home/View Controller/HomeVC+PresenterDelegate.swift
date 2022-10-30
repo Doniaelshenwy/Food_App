@@ -8,7 +8,7 @@
 import Foundation
 
 extension HomeViewController: HomeView{
-    
+   
     func fetchDataSucessful() {
         tableView.reloadData()
     }
@@ -17,6 +17,7 @@ extension HomeViewController: HomeView{
         print(error)
     }
     
+   
 //    func didSelect(user: Category) {
 //       let vc = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
 //        vc.img = user.strCategoryThumb

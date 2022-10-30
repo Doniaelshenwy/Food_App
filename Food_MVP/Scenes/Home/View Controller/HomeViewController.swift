@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
         presenter?.viewDidLoad()
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchResultsUpdater = self
 
     }
 }

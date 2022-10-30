@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol HomeView: AnyObject{
     var presenter: HomeVCPresenter? {get set}
@@ -22,6 +23,7 @@ protocol FoodCellView{
 
 class HomeVCPresenter{
     var foodArray: [Category] = []
+    var searchArray: [Category] = []
     private weak var homeView: HomeView?
     private var foodIntractor: FoodInteractor
     private var foodRouter: HomeVCRouter
@@ -40,6 +42,7 @@ class HomeVCPresenter{
         foodIntractor.getDataFromAPI { [self] dataArray, error in
             if let dataArray = dataArray{
                 foodArray = dataArray.categories
+                searchArray = foodArray
                 homeView?.fetchDataSucessful()
             }
             if let error = error{
@@ -49,18 +52,18 @@ class HomeVCPresenter{
     }
     
     func countFoodArray() -> Int{
-        return foodArray.count
+        return searchArray.count
     }
     
     func showDataInCell(cell: FoodCellView, for index: Int){
-        let food = foodArray[index]
+        let food = searchArray[index]
         cell.setName(name: food.strCategory)
         cell.setImage(img: food.strCategoryThumb)
         cell.curveView()
     }
     
     func didSelect(index: Int){
-        let food = foodArray[index]
+        let food = searchArray[index]
         foodRouter.navigateToDetalisScreen(from: homeView, food: food)
     }
     
@@ -80,4 +83,21 @@ class HomeVCPresenter{
            }
            return "Hello"
        }
+    
+    func createSearch(searchController: UISearchController){
+        guard let searchText = searchController.searchBar.text else { return }
+            if searchText == ""{
+                searchArray = foodArray
+            } else {
+                searchArray = []
+            for food in foodArray{
+                if food.strCategory.lowercased().contains(searchText.lowercased()){
+                    searchArray.append(food)
+                    print(searchText)
+                    print(searchArray)
+                }
+            }
+        }
+        homeView?.fetchDataSucessful()
+    }
 }
